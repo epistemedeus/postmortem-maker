@@ -1,0 +1,4 @@
+node_modules/
+*.log
+.runx/
+skills/postmortem-maker/artifacts/
