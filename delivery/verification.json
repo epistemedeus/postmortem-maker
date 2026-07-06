@@ -1,0 +1,12 @@
+{
+  "schema": "postmortem.maker.bounty.verification.v1",
+  "summary": "postmortem-maker is a published, installable runx skill (epistemedeus/postmortem-maker@sha-1d497f39e48b) that turns incident fragments — incident_timeline[], alerts[], deploy_events[], chat_notes[], and a postmortem_policy — into a traceable postmortem where every timeline entry and root-cause claim cites input evidence, unresolved facts go to unknowns[], and a gated publish_proposal for the doc-publisher executor is emitted only when the evidence is consistent — never posting or assigning anything. Local harness passed 3/3; the post-publish dogfood run on the consistent-evidence input sealed receipt runx:receipt:sha256:dcf429329ec50227edbe7c9a4285b5c2a92b6e9f5504ee7ba782090cbdf4c60c with root_cause determined, unknowns=0, action_items=2, and publish_proposal proposed, and runx verify returned valid.",
+  "receipt_ref": "runx:receipt:sha256:dcf429329ec50227edbe7c9a4285b5c2a92b6e9f5504ee7ba782090cbdf4c60c",
+  "verify_command": "runx verify --receipt receipt.json --json",
+  "verify_verdict": "valid",
+  "signature_alg": "Ed25519",
+  "issuer_kid": "epistemedeus-secret-catcher",
+  "public_key_base64": "WsDXUw1Os7UbLMG+qDfsbTAysd30qEeXfZsgNyzVFTc=",
+  "public_key_sha256": "sha256:18e9fc9d42e79bcd357619f3584aca31ae2963d313e6dcbec5b5d0a9620075af",
+  "note": "Public key only — no secret. Anyone can verify the sealed dogfood receipt with the command above."
+}
